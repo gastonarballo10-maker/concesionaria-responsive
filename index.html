@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastón Arballo - Concesionaria de Coches</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-word-links">
+            <a href="#inicio" class="word-link active"></a>
+            <a href="#nosotros" class="word-link"></a>
+            <a href="#coches" class="word-link"></a>
+            <a href="#servicios" class="word-link"></a>
+            <a href="#contacto" class="word-link"></a>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="animate-text">EL FUTURO ES <span class="highlight">AHORA</span></h2>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>SOBRE <span>NOSOTROS</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Líderes en Movilidad del Futuro</h3>
+                    <p>En Gastón Arballo nos especializamos en vehículos de última generación. Desde 2010, hemos sido pioneros en la comercialización de coches eléctricos, híbridos y autónomos.</p>
+                    <p>Nuestro showroom futurista te transporta a una experiencia única donde la tecnología y el diseño se fusionan para ofrecerte lo mejor del mercado automotriz.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>15+</h4>
+                            <p>Años de Experiencia</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>5000+</h4>
+                            <p>Clientes Satisfechos</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>200+</h4>
+                            <p>Vehículos Disponibles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="consecionaria.png" alt="Nuestro Showroom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coches Section -->
+    <section id="coches" class="cars">
+        <div class="container">
+            <div class="section-header">
+                <h2>NUESTROS <span>COCHES</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="cars-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="electric">Eléctricos</button>
+                <button class="filter-btn" data-filter="hybrid">Híbridos</button>
+                <button class="filter-btn" data-filter="sport">Deportivos</button>
+            </div>
+            <div class="cars-grid" id="carsGrid">
+                <!-- Coche 1 -->
+                <div class="car-card" data-category="electric">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600" alt="Tesla Model S">
+                        <div class="car-badge">NUEVO</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Tesla Model S Plaid</h3>
+                        <p class="car-specs">1020 HP | 0-100 km/h: 2.1s</p>
+                        <div class="car-price">
+                            <span class="price">€129,990</span>
+                        </div>
+                        <button class="btn-details">Ver Detalles <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Coche 2 -->
+                <div class="car-card" data-category="sport">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600" alt="Porsche Taycan">
+                    </div>
+                    <div class="car-info">
+                        <h3>Porsche Taycan Turbo</h3>
+                        <p class="car-specs">761 HP | Autonomía: 450km</p>
+                        <div class="car-price">
+                            <span class="price">€185,000</span>
+                        </div>
+                        <button class="btn-details">Ver Detalles <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Coche 3 -->
+                <div class="car-card" data-category="electric">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=600" alt="Lucid Air">
+                        <div class="car-badge">DESTACADO</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Lucid Air Dream</h3>
+                        <p class="car-specs">1111 HP | Autonomía: 800km</p>
+                        <div class="car-price">
+                            <span class="price">€169,000</span>
+                        </div>
+                        <button class="btn-details">Ver Detalles <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Coche 4 -->
+                <div class="car-card" data-category="hybrid">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=600" alt="BMW i8">
+                    </div>
+                    <div class="car-info">
+                        <h3>BMW i8 Roadster</h3>
+                        <p class="car-specs">374 HP | Híbrido Enchufable</p>
+                        <div class="car-price">
+                            <span class="price">€145,000</span>
+                        </div>
+                        <button class="btn-details">Ver Detalles <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Coche 5 -->
+                <div class="car-card" data-category="electric">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1617654112368-307921291f42?w=600" alt="Mercedes EQS">
+                    </div>
+                    <div class="car-info">
+                        <h3>Mercedes EQS 580</h3>
+                        <p class="car-specs">523 HP | Lujo Total</p>
+                        <div class="car-price">
+                            <span class="price">€135,000</span>
+                        </div>
+                        <button class="btn-details">Ver Detalles <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Coche 6 -->
+                <div class="car-card" data-category="sport">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600" alt="Rimac Nevera">
+                        <div class="car-badge">EXCLUSIVO</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Rimac Nevera</h3>
+                        <p class="car-specs">1914 HP | Eléctrico Puro</p>
+                        <div class="car-price">
+                            <span class="price">€2,200,000</span>
+                        </div>
+                        <button class="btn-details">Ver Detalles <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>NUESTROS <span>SERVICIOS</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Venta de Vehículos</h3>
+                    <p>Amplio catálogo de vehículos nuevos y seminuevos de las mejores marcas del mundo.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Taller Especializado</h3>
+                    <p>Servicio técnico especializado en vehículos eléctricos e híbridos con tecnología de punta.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Financiación</h3>
+                    <p>Las mejores condiciones de financiación adaptadas a tus necesidades.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Tasación</h3>
+                    <p>Tasamos tu vehículo actual al mejor precio del mercado de forma gratuita.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguros</h3>
+                    <p>Gestionamos el mejor seguro para tu vehículo con las coberturas más completas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <h3>Puntos de Carga</h3>
+                    <p>Instalación y mantenimiento de puntos de carga para vehículos eléctricos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2><span>CONTACTO</span></h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visítanos</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Av. del Futuro 2077<br>28001 Madrid, España</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+34 91 123 45 67</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@gastonorballo.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun - Vie: 9:00 - 20:00<br>Sáb: 10:00 - 14:00</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Nombre completo</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Correo electrónico</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone">
+                            <label for="phone">Teléfono</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>GASTÓN<span>ARBALLO</span></h2>
+                    <p>El futuro de la movilidad está aquí</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#coches">Coches</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Suscríbete para recibir las últimas novedades</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gastón Arballo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
